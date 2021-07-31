@@ -1,0 +1,38 @@
+.root {
+    -fx-background-color: #e2e2e2;
+}
+.label {
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 14pt;
+    -fx-text-fill: #5100f9;
+}
+.pos-Btn {
+    -fx-background-color: #562ac6;
+    -fx-font-weight: bold;
+    -fx-text-fill: #c1c1c1;
+}
+.pos-Btn:hover {
+    -fx-background-color: #009dff;
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+}
+.neg-Btn {
+    -fx-background-color: #c1c1c1;
+    -fx-font-weight: bold;
+    -fx-text-fill: #562ac6;
+}
+.neg-Btn:hover {
+    -fx-background-color: #a9a9ff;
+    -fx-cursor: hand;
+}
+.alert-button {
+    -fx-background-color: #00bbff;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+.alert-button:hover {
+    -fx-background-color: #0088b9;
+    -fx-cursor: hand;
+}

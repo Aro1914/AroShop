@@ -1,0 +1,28 @@
+.root {
+    -fx-background-color: #e2e2e2;
+}
+.label {
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 14pt;
+    -fx-text-fill: #562ac6;
+}
+.neg-Btn {
+    -fx-background-color: #562ac6;
+    -fx-text-fill: #c1c1c1;
+    -fx-font-weight: bold;
+}
+.neg-Btn:hover {
+    -fx-background-color: #009dff;
+    -fx-cursor: hand;
+    -fx-text-fill: #ffffff;
+}
+.pos-Btn {
+    -fx-background-color: #c1c1c1;
+    -fx-font-weight: bold;
+    -fx-text-fill: #562ac6;
+}
+.pos-Btn:hover {
+    -fx-background-color: #a9a9ff;
+    -fx-cursor: hand;
+}
+

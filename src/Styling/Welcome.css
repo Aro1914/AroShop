@@ -1,0 +1,14 @@
+.root {
+    -fx-background-color: #e2e2e2;
+}
+.aroShop {
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: linear-gradient(to bottom, #562ac6, #562ac6, #00bbff);
+    -fx-font-size: 60pt;
+    -fx-font-weight: bold;
+}
+.motto {
+    -fx-text-fill: linear-gradient(to bottom, #00bbff,#00bbff, #562ac6 );
+    -fx-font-size: 20pt;
+    -fx-font-style: italic;
+}
