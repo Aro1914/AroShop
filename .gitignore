@@ -17,6 +17,7 @@
 
 # Package Files #
 *.jar
+!Database/*.jar
 *.war
 *.nar
 *.ear
@@ -28,3 +29,5 @@
 hs_err_pid*
 
 # End of https://www.toptal.com/developers/gitignore/api/java
+/build/
+/dist/
