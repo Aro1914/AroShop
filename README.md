@@ -1,5 +1,2 @@
-# AroShop
-A small e-commerce application.
-
-## Note
+# Note
 This project is dependent on the JDK 1.8 platform
