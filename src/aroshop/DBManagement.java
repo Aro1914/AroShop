@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import javafx.animation.FadeTransition;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -16,6 +17,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 public class DBManagement {
 
@@ -51,7 +53,15 @@ public class DBManagement {
 				if (AroShop.newLook.cartBox.getChildren().isEmpty()) {
 					AroShop.newLook.cart.setDisable(true);
 				}
+
 				AroShop.viewNew();
+
+				FadeTransition fadeIn = new FadeTransition(Duration.seconds(2), AroShop.newLook.lay);
+				fadeIn.setFromValue(0);
+				fadeIn.setToValue(1);
+				fadeIn.setCycleCount(1);
+				fadeIn.play();
+
 			} else {
 				AroShop.loginPage.passField.setText("");
 				alert("Wrong Password!", "Forgot password?", "Click the 'Forgot Password?' button");
