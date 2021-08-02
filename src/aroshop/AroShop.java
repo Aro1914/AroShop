@@ -42,7 +42,7 @@ public class AroShop extends Application {
 	protected static void viewNew() {
 		newLookScene.getStylesheets().add("/Styling/AroShop.css");
 		AroShop.stage.setScene(newLookScene);
-		AroShop.stage.setTitle("AroShop - Now " + user_name + " place that order!");
+		AroShop.stage.setTitle("AroShop - Now place that order " + user_name +"!");
 	}
 //	End of NewLook View
 
@@ -55,7 +55,7 @@ public class AroShop extends Application {
 		forgotPassword = new ForgotPassword(forgotPasswordPane);
 		forgotPasswordScene.getStylesheets().add("/Styling/AroShop.css");
 		AroShop.stage.setScene(forgotPasswordScene);
-		AroShop.stage.setTitle("AroShop - Retrieve Password");
+		AroShop.stage.setTitle("AroShop - Password Retrieval");
 	}
 //	End of ForgotPassword View
 
