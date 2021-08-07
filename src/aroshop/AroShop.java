@@ -19,13 +19,13 @@ import javafx.util.Duration;
 
 public class AroShop extends Application {
 
-	Label aroShop;
+	Label theme;
 	Label motto;
 
-	protected static String user_name;
+	protected static String userName;
 
 	protected static void setUsername() {
-		user_name = loginPage.usernameField.getText();
+		userName = loginPage.usernameField.getText();
 	}
 
 	static Stage stage = new Stage();
@@ -42,7 +42,7 @@ public class AroShop extends Application {
 	protected static void viewNew() {
 		newLookScene.getStylesheets().add("/Styling/AroShop.css");
 		AroShop.stage.setScene(newLookScene);
-		AroShop.stage.setTitle("AroShop - Now place that order " + user_name +"!");
+		AroShop.stage.setTitle("AroShop - Now place that order " + userName +"!");
 	}
 //	End of NewLook View
 
@@ -111,8 +111,8 @@ public class AroShop extends Application {
 				newLook.boxTop.getChildren().remove(0);
 				newLook.boxTop.getChildren().add(0, newLook.categoryBox);
 				newLook.categoryBox.getSelectionModel().select(0);
-				newLook.cart.setDisable(false);
-				newLook.order.setDisable(false);
+				newLook.cart.setDisable(!x);
+				newLook.order.setDisable(!x);
 				newLook.lay.setBottom(null);
 				newLook.lay.setCenter(newLook.scrl);
 			}
@@ -184,13 +184,13 @@ public class AroShop extends Application {
 	}
 
 	private void loadSplashScreen() {
-		aroShop = new Label("AroShop");
-		aroShop.getStyleClass().add("aroShop");
+		theme = new Label("AroShop");
+		theme.getStyleClass().add("aroShop");
 
 		motto = new Label("...we give smiles to your pockets.");
 		motto.getStyleClass().add("motto");
 
-		VBox box = new VBox(20, aroShop, motto);
+		VBox box = new VBox(20, theme, motto);
 		box.setAlignment(Pos.CENTER);
 
 		root.setCenter(box);

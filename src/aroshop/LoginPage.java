@@ -86,7 +86,7 @@ public class LoginPage {
 					result2 = statement2.executeQuery();
 
 					if (result2.next()) {
-						previousUser = AroShop.user_name;
+						previousUser = AroShop.userName;
 						AroShop.setUsername();
 						DBManagement.valUser();
 					} else {

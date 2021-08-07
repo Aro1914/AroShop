@@ -42,8 +42,8 @@ public class DBManagement {
 			ResultSet result = statement.executeQuery();
 
 			if (result.next()) {
-				alert("Login Success!", "Welcome " + AroShop.user_name);
-				if (!AroShop.user_name.equals(AroShop.loginPage.previousUser)) {
+				alert("Login Success!", "Welcome " + AroShop.userName);
+				if (!AroShop.userName.equals(AroShop.loginPage.previousUser)) {
 					AroShop.newLook.loadCart();
 					AroShop.newLook.loadPurchases();
 				}
