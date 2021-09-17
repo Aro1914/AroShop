@@ -21,6 +21,7 @@ If you have downloaded this project and wish to run it on your NetBeans IDE, you
 ![Screenshot (429)](https://user-images.githubusercontent.com/68448315/127789108-8a054ac1-2e9d-40d6-b2e7-0728cf71133a.jpeg)
 
 2. Next Click on the Resolve button
-3. Locate the Database folder to the get the JDBC for SQLite. Its stored in a subfolder of the src/ directory called Database.
-4. Double click on the .jar file for the SQLite JDBC and you should be taken back to the dialogue box above, but this time the yellow triangle icon on the left of the message—"sqlite-jdbc-3.32.3.2.jar" file/folder could not be found—should be a green circle.
-5. Click on the close button, and run your application.
+3. Download the sqlite-jdbc-3.32.3.2.jar file and preferably move it to the same directory as the project for SQLite.
+4. Then locate the jar file in the IDE.
+5. Double click on the .jar file for the SQLite JDBC and you should be taken back to the dialogue box above, but this time the yellow triangle icon on the left of the message—"sqlite-jdbc-3.32.3.2.jar" file/folder could not be found—should be a green circle.
+6. Click on the close button, and run your application.
